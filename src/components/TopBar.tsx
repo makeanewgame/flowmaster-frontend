@@ -11,20 +11,9 @@ import { Badge } from "@heroui/react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut, selectCurrentUser } from "@/redux/features/authSlice";
-import { fileServiceApi } from "@/redux/service/fileServiceApi";
 import { authServiceApi } from "@/redux/service/authServiceApi";
-import RobotAvatar from "./RobotAvatar";
-import {
-  cleanBotState,
-  clearChatId,
-  clearChatMessages,
-} from "@/redux/features/botSlice";
-import { botServiceApi } from "@/redux/service/botServiceApi";
-import { quotaServiceApi } from "@/redux/service/quotaServiceApi";
-import { reportServiceApi } from "@/redux/service/reportsServiceApi";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { contentServiceApi } from "@/redux/service/contentServiceApi";
 
 export default function TopBar() {
   const dispatch = useDispatch();
@@ -46,23 +35,13 @@ export default function TopBar() {
   }, [user]);
 
   const handleLogout = () => {
-    dispatch(fileServiceApi.util.resetApiState());
     dispatch(authServiceApi.util.resetApiState());
-    dispatch(botServiceApi.util.resetApiState());
-    dispatch(quotaServiceApi.util.resetApiState());
-    dispatch(reportServiceApi.util.resetApiState());
-    dispatch(contentServiceApi.util.resetApiState());
-    dispatch(cleanBotState());
-    dispatch(clearChatId());
-    dispatch(clearChatMessages());
     dispatch(logOut());
   };
 
   return (
     <div className="flex justify-between items-center  bg-slate-50">
-      <div className="">
-        <RobotAvatar />
-      </div>
+      <div className=""></div>
       <div className=" flex justify-end p-4 gap-4 items-center">
         <FeedbackIcon className="w-6 h-6 fill-gray-500 hover:fill-blue-500" />
         <Badge color="danger" content={5} shape="circle">

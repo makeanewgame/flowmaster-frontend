@@ -1,5 +1,3 @@
-import ChatForm from "@/components/ChatForm";
-
 function Home() {
   // const dummyChatData = {
   //   messages: [
@@ -41,9 +39,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col h-full gap-4 p-4 pt-0 w-full">
-        <ChatForm />
-      </div>
+      <div className="flex flex-col h-full gap-4 p-4 pt-0 w-full"></div>
     </>
   );
 }
