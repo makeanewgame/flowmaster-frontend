@@ -30,9 +30,9 @@ export const menu = [
     sideMenu: true,
   },
   {
-    name: "vault",
+    name: "companies",
     icon: IconType.Vault,
-    path: "/vault",
+    path: "/companies",
     role: [UserTypes.ADMIN, UserTypes.USER],
     sideMenu: true,
   },

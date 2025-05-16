@@ -18,6 +18,7 @@ import { selectCurrentUser } from "./redux/features/authSlice";
 import { setConnected } from "./redux/features/websocketSlice";
 import { initSocket, disconnectSocket } from "./redux/service/socketInstance";
 import { Socket } from "socket.io-client";
+import Companies from "./pages/Companies";
 
 function App() {
   const [activeRole, setActiveRole] = useState<UserTypes>(UserTypes.USER);
@@ -46,7 +47,8 @@ function App() {
     switch (item) {
       case "home":
         return <Home />;
-
+      case "companies":
+        return <Companies />;
       default:
         break;
     }

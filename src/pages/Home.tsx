@@ -1,34 +1,4 @@
 function Home() {
-  // const dummyChatData = {
-  //   messages: [
-  //     {
-  //       datetime: "2021-10-10T10:10:10",
-  //       sender: "bot",
-  //       message: "Hi ✋",
-  //     },
-  //     {
-  //       datetime: "2021-10-10T10:10:10",
-  //       sender: "bot",
-  //       message: " welcome to Chatbu How can help you today?",
-  //     },
-  //     {
-  //       datetime: "2021-10-10T10:10:10",
-  //       sender: "user",
-  //       message: "I need help",
-  //     },
-  //     {
-  //       datetime: "2021-10-10T10:10:10",
-  //       sender: "bot",
-  //       message: "Sure, I can help you with that",
-  //     },
-  //     {
-  //       datetime: "2021-10-10T10:10:10",
-  //       sender: "user",
-  //       message: "Thank you",
-  //     },
-  //   ],
-  // };
-
   return (
     <>
       <div className="flex justify-between items-start gap-4 p-4 h-full">
