@@ -1,0 +1,8 @@
+{
+  "login": "Giriş",
+  "logout": "Çıkış",
+  "register": "Kayıt Ol",
+  "hint": "Giriş yapmadığınızı fark ettik, devam etmek için lütfen giriş yapın.",
+  "loginWithGoogle": "Google ile giriş yap",
+  "registerWithGoogle": "Google ile hesap oluştur"
+}

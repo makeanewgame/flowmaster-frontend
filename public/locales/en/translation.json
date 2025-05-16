@@ -1,0 +1,8 @@
+{
+  "login": "Login",
+  "logout": "Logout",
+  "register": "Register",
+  "hint": "We regconize you are not logged in, please login to continue.",
+  "loginWithGoogle": "Login with Google",
+  "registerWithGoogle": "Register with Google"
+}
